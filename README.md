@@ -17,7 +17,8 @@ I believe in learning by **building, sharing, and improving** with the community
 ## 🧑‍💻 What I’m Learning
 - **Python** (Core + Advanced)  
 - **Data Structures & Algorithms (DSA) with Python**  
-- **Data Analytics & Visualization** → Excel, Power BI, SQL, Python, Pandas  
+- **Data Analytics & Visualization** → Excel, Power BI, SQL, Python, Pandas
+- -""GET A JOB ""
 - **Data Science** → Machine Learning, Deep Learning, Natural Language Processing  
 - **Projects with Operations & Business Context**  
 - **Finance & Business Acumen**  
