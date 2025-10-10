@@ -1,0 +1,92 @@
+import random
+
+from hangman_words import word_list
+from hangman_art import stages, logo
+
+lives = 6
+
+print(logo)
+
+chosen_word = random.choice(word_list)
+print(chosen_word)
+
+placeholder = ""
+word_length = len(chosen_word)
+for position in range(word_length):
+    placeholder += "_"
+print("Word to guess: " + placeholder)
+
+game_over = False
+correct_letters = []
+
+list_chosen_word=[]
+for i in chosen_word:
+    list_chosen_word.append(i)
+
+
+
+while not game_over:
+
+
+
+    print(f"****************************{lives}/6 LIVES LEFT****************************")
+    print(f"need hint type 'hint'")
+    guess = input("Guess a letter: ").lower()
+
+    while True:
+        try:
+            # this above code is comprehension in which are making hints more powerful.It will not repeat the gussed word
+            hint_list = [letter for letter in list(chosen_word) if letter not in correct_letters]
+            break
+        except IndexError:
+            print("No letter left to reveal")
+
+
+    if guess in correct_letters:
+        print(f"You've already guessed {guess}")
+        continue
+
+    if guess == "hint" and lives >= 1:
+        lives -= 1
+        option=(random.choice(hint_list))
+        print(option)
+        correct_letters.append(option)
+
+
+
+
+    display = ""
+
+    for letter in chosen_word:
+        if letter == guess:
+            display += letter
+            if guess not in correct_letters:
+                correct_letters.append(guess)
+        elif letter in correct_letters:
+            display += letter
+        else:
+            display += "_"
+
+    print("Word to guess: " + display)
+
+    # this is written because i need display for the user to see .
+    if guess == 'hint':
+        continue
+
+    if guess not in chosen_word:
+        lives -= 1
+        print(f"You guessed {guess}, that's not in the word. You lose a life.")
+
+        if lives == 0:
+            game_over = True
+
+            print(f"***********************IT WAS {chosen_word}! YOU LOSE**********************")
+
+    if "_" not in display:
+        game_over = True
+        print("****************************YOU WIN****************************")
+
+    print(stages[lives])
+
+
+this is code for debug 2 how it is i solved it. give me feedback
