@@ -64,7 +64,7 @@ Follow me there to see my progress in real-time!
 ---
 
 ## 🎯 Vision
-My ultimate goal is to become an **expert Data Professional & CFO-minded professional** in the finance sector,  
+My ultimate goal is to become an **Expert Data Professional ** in the finance sector,  
 leveraging **data, AI, and strategic thinking** to solve real-world business problems.  
 
 Let’s grow together 🚀
