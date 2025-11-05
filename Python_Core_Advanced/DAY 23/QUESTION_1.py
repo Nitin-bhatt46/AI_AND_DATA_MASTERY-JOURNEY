@@ -11,3 +11,7 @@ for _ in range(10):
   t.penup()
   t.forward(100)
   t.pendown()
+
+
+screen= Screen()
+screen.exitonclick()
