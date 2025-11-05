@@ -12,3 +12,7 @@ our_turtle.shape("turtle")
 our_turtle.color("red","blue")
 
 star()
+
+
+screen= Screen()
+screen.exitonclick()
