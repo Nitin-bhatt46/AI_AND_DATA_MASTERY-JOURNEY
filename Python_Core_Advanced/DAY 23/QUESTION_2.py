@@ -44,3 +44,8 @@ for _ in range(9):
 for _ in range(10):
     t.left(36)
     t.forward(100)
+
+
+screen= Screen()
+screen.exitonclick()
+
